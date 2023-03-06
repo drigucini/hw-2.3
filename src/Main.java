@@ -1,30 +1,32 @@
 public class Main {
     public static void main(String[] args) {
-        task1();
-        task2();
-        task3();
-        task4();
-        task5();
-    }
+        Car car = new Car(null, 0);
+        Car car2 = new Car(null, 0);
+        car.setModelName("car1");
+        car2.setModelName("car2");
+        car.setWheelsCount(4);
+        car2.setWheelsCount(4);
 
-    public static void task1 () {
-        System.out.println("\nTask 1");
-    }
+        Truck truck = new Truck();
+        Truck truck2 = new Truck();
+        truck.setModelName("truck1");
+        truck2.setModelName("truck2");
+        truck.setWheelsCount(6);
+        truck2.setWheelsCount(8);
 
-    public static void task2 () {
-        System.out.println("\nTask 2");
-    }
+        Bicycle bicycle = new Bicycle(null, 0);
+        Bicycle bicycle2 = new Bicycle(null, 0);
+        bicycle.setModelName("bicycle1");
+        bicycle2.setModelName("bicycle2");
+        bicycle.setWheelsCount(2);
+        bicycle2.setWheelsCount(2);
 
-    public static void task3 () {
-        System.out.println("\nTask 3");
+        ServiceStation station = new ServiceStation();
+        station.check(car, null, null);
+        station.check(car2, null, null);
+        station.check(null, bicycle, null);
+        station.check(null, bicycle2, null);
+        station.check(null, null, truck);
+        station.check(null, null, truck2);
     }
-
-    public static void task4 () {
-        System.out.println("\nTask 4");
-    }
-
-    public static void task5 () {
-        System.out.println("\nTask 5");
-    }
-
 }

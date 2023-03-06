@@ -1,12 +1,8 @@
-public class Car {
+public class Truck {
     // был нарушен принцип инкапсуляции. Добавил гетттеры и сеттеры, сделал поля класса private
     private String modelName;
     private int wheelsCount;
 
-    public Car(String modelName, int wheelsCount) {
-        this.modelName = modelName;
-        this.wheelsCount = wheelsCount;
-    }
     public String getModelName() {
         return modelName;
     }
@@ -29,5 +25,9 @@ public class Car {
 
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
+    }
+
+    public void checkTrailer() {
+        System.out.println("Проверяем прицеп");
     }
 }
