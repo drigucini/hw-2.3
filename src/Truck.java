@@ -1,23 +1,4 @@
-public class Truck {
-    // был нарушен принцип инкапсуляции. Добавил гетттеры и сеттеры, сделал поля класса private
-    private String modelName;
-    private int wheelsCount;
-
-    public String getModelName() {
-        return modelName;
-    }
-
-    public void setModelName(String modelName) {
-        this.modelName = modelName;
-    }
-
-    public int getWheelsCount() {
-        return wheelsCount;
-    }
-
-    public void setWheelsCount(int wheelsCount) {
-        this.wheelsCount = wheelsCount;
-    }
+public class Truck extends Vehicle{
 
     public void updateTyre() {
         System.out.println("Меняем покрышку");
