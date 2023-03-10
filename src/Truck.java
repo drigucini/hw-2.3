@@ -1,9 +1,9 @@
-public class Truck extends Vehicle{
-
+public class Truck extends MotorVehicle{
+@Override
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
-
+@Override
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     }

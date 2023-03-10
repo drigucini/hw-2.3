@@ -1,8 +1,10 @@
-public class Car extends Vehicle {
+public class Car extends MotorVehicle {
+    @Override
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
 
+    @Override
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
