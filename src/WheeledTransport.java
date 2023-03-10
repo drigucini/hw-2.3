@@ -1,4 +1,4 @@
-public abstract class Vehicle {
+public abstract class WheeledTransport implements Transport{
     private String modelName;
     private int wheelsCount;
 
@@ -17,5 +17,12 @@ public abstract class Vehicle {
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
-}
 
+    @Override
+    public void service(){
+        //
+    }
+
+    public void updateTyre() {
+    }
+}
