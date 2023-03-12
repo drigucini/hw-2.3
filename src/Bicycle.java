@@ -4,4 +4,8 @@ public class Bicycle extends WheeledTransport{
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
+
+    @Override
+    public void service() {
+    }
 }

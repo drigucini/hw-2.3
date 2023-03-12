@@ -19,9 +19,7 @@ public abstract class WheeledTransport implements Transport{
     }
 
     @Override
-    public void service(){
-        //
-    }
+    public abstract void service();
 
     public void updateTyre() {
     }
